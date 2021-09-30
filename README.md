@@ -19,5 +19,9 @@ This challenge asked us to make a tech blog where people can post blogs along wi
 We have projects in this cohort due tomorrow so I ran out of time to get this one done since it is also do tomorrow and the project takes priority
 After the cohort is over I will revisit this and work on getting the code built up as much as I can to reflect what I have learned in the cohort so far.
 
-# Contributors
+# Future Screenshot:
+
+# Future Link to Video Walkthrough:
+
+# Contributors:
 Made with love by Josh Jackson
