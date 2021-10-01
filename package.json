@@ -1,0 +1,21 @@
+{
+  "name": "blogger-tech",
+  "version": "1.0.0",
+  "description": "Blogger Tech",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Joker282855/blogger-tech.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Joker282855/blogger-tech/issues"
+  },
+  "homepage": "https://github.com/Joker282855/blogger-tech#readme"
+}
