@@ -1,4 +1,4 @@
-const { Model, Datatypes } = require('sequelize');
+const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
 class User extends Model {}
@@ -6,18 +6,18 @@ class User extends Model {}
 User.init(
     {
         id: {
-            tyep: Datatypes.INTEGER,
+            type: DataTypes.INTEGER,
             allowNull: false,
             primaryKey: true,
             autoIncrement: true
         },
         username: {
-            type: Datatypes.STRING,
+            type: DataTypes.STRING,
             allowNull: false,
             required: [true, 'Please choose an email']
         },
-        emial: {
-            type: Datatypes.STRING,
+        email: {
+            type: DataTypes.STRING,
             allowNull: false,
             unique: true,
             validate: {
@@ -25,7 +25,7 @@ User.init(
             }
         },
         password: {
-            type: Datatypes.STRING,
+            type: DataTypes.STRING,
             allowNull: false,
             validate: {
                 len: [8]
