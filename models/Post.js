@@ -21,13 +21,31 @@ Post.init(
             allowNull: false,
             required: true
         },
-        user: {
+        post_url: {
             type: DataTypes.STRING,
             allowNull: false,
-            required: true
+            validate: {
+                isURL: true
+            }
         },
-        createdAt: DataTypes.DATE,
+        user_id: {
+            type: DataTypes.INTEGER,
+            references: {
+                model: 'user',
+                key: 'id'
+            }
+        },
+        date: {
+            type: DataTypes.DATE,
             allowNull: false,
-            
+        }
+    },
+    {
+        sequelize,
+        freezeTableName: true,
+        underscored: true,
+        modelName: 'post'
     }
 )
+
+module.exports = Post;
