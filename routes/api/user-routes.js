@@ -42,8 +42,24 @@ router.post('/', (req, res) => {
         });
 });
 
+router.post('/login', (req, res) => {
+    User.findOne({
+        where: {
+            email: req.body.email
+        }
+    })
+    .then(dbUserData => {
+        if (!dbUserData) {
+            res.status(400).json({ message: 'No use found with this id for login' });
+            return;
+        }
+        res.json({ user: dbUserData });
+    });
+});
+
 router.put('/:id', (req, res) => {
     User.update(req.body, {
+        individualHooks: true,
         where: {
             id: req.params.id
         }
@@ -82,3 +98,4 @@ router.delete('/:id', (req, res) => {
 });
 
 module.exports = router;
+
