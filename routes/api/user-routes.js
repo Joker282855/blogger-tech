@@ -53,7 +53,14 @@ router.post('/login', (req, res) => {
             res.status(400).json({ message: 'No use found with this id for login' });
             return;
         }
-        res.json({ user: dbUserData });
+
+        const validPassword = dbUserData.checkPassword(req.body.password);
+        if (!validPassword) {
+            res.status(400).json({ message: 'Incorrect password!' });
+            return;
+        }
+
+        res.json({ user: dbUserData, message: 'You are now logged in!' });
     });
 });
 
