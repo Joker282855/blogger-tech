@@ -1,6 +1,5 @@
 const router = require('express').Router();
-const { Post, User } = require('../../models');
-const { drop } = require('../../models/User');
+const { Post, User, Comment } = require('../../models');
 
 router.get('/', (req, res) => {
     Post.findAll({
@@ -9,10 +8,10 @@ router.get('/', (req, res) => {
             {
                 model: Comment,
                 attributes: ['id', 'comment_text', 'post_id', 'user_id', 'created_at'],
-                include: [
+                include: {
                     model: User,
                     attributes: ['username']
-                ]
+                }
             },
             {
                 model: User,
