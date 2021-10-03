@@ -3,7 +3,7 @@ const { Post, User, Comment } = require('../models');
 
 router.get('/', (req, res) => {
     Post.findAll({
-        attirbute: [
+        attributes: [
             'id',
             'post_url',
             'title',
@@ -25,7 +25,9 @@ router.get('/', (req, res) => {
         ]
     })
     .then(dbPostData => {
-        res.render('homepage', dbPostData[0]);
+        const posts = dbPostData.map(post => post.get({ plain: true }));
+
+        res.render('homepage', { posts });
     })
     .catch(err => {
         console.log(err);
