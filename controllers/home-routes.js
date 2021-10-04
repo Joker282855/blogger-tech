@@ -114,4 +114,8 @@ router.get('/signup', (req, res) => {
     res.render('signup');
 });
 
+router.get('/signedin', (req, res) => {
+    res.render('signedin');
+});
+
 module.exports = router;
