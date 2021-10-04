@@ -66,19 +66,26 @@ router.post('/', (req, res) => {
 });
 
 router.post('/signup', (req, res) => {
-    User.findOne({
-        where: {
-            username: req.body.username
-        }
+    User.create({
+        username: req.body.username,
+        email: req.body.email,
+        password: req.body.password
     })
-    .then(dbUserData => {
-        if (!dbUserData) {
-            res.status(400).json({ message: 'No use found with this id for login' });
-            return;
-        }
-        res.json({ user: dbUserData });
-    });
+        .then(dbUserData => {
+            req.session.save(() => {
+                req.session.user_id = dbUserData.id;
+                req.session.username = dbUserData.username;
+                req.session.loggedIn = true;
+
+                res.json(dbUserData);
+            })
+        })
+        .catch(err => {
+            console.log(err);
+            res.status(500).json(err);
+        });
 });
+
 
 router.put('/:id', (req, res) => {
     User.update(req.body, {
