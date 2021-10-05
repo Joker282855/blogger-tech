@@ -18,7 +18,7 @@
                 <span>({{post.post_url}})</span>
             </div>
             <div class="meta">
-                by {{post.user.username}} on
+                by {{post.user.username}} on with description: {{post.text}}
                 {{post.created_at}}
 
                 <a href="/post/{{id}}">{{post.comments.length}} comment(s)</a>
