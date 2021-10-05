@@ -227,6 +227,10 @@ router.get('/posted', (req, res) => {
 
 router.get('/blog', (req, res) => {
     res.render('blog');
-})
+});
+
+router.get('/update', (req, res) => {
+    res.render('update');
+});
 
 module.exports = router;

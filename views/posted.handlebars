@@ -1,6 +1,8 @@
 <header>
     <h1>
+        <a href="/signedin">Home</a>
         <a href="/posted">Dashboard</a>
+        <button id="logout" class="btn-no-style">Logout</button>
     </h1>
 </header>
 </br>
@@ -13,9 +15,10 @@
             <span>({{post.post_url}})</span>
         </div>
         <div class="meta">
-            by {{post.user.username}} on
-            {{post.created_at}}
+            by {{post.user.username}} on with description: {{post.text}}
+            {{post.created_at}} click here to update or delete post 
 
+            <a href="/update">editing post:</a>
             <a href="/post/{{id}}">{{post.comments.length}} comment(s)</a>
             </div>
         </article>
