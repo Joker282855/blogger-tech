@@ -191,4 +191,42 @@ router.get('/post/:id', (req, res) => {
         });
 });
 
+router.get('/posted', (req, res) => {
+    Post.findAll({
+        attributes: [
+            'id',
+            'post_url',
+            'title',
+            'created_at'
+        ],
+        include: [
+            {
+                model: Comment,
+                attributes: ['id', 'comment_text', 'post_id', 'user_id', 'created_at'],
+                include: {
+                    model: User,
+                    attributes: ['username']
+                }
+            },
+            {
+                model: User,
+                attributes: ['username']
+            }
+        ]
+    })
+    .then(dbPostData => {
+        const posts = dbPostData.map(post => post.get({ plain: true }));
+        
+        res.render('posted', { posts });
+    })
+    .catch(err => {
+        console.log(err);
+        res.status(500).json(err);
+    });
+});
+
+router.get('/blog', (req, res) => {
+    res.render('blog');
+})
+
 module.exports = router;
