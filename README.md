@@ -15,13 +15,14 @@ This challenge asked us to make a tech blog where people can post blogs along wi
 8. Basically the other tasks were to have a user be able to create a new blog post and use routes to update or get rid of a post
 9. The last few tasks were having the user sign in again if they were ever idle
 
-# Future Development:
-We have projects in this cohort due tomorrow so I ran out of time to get this one done since it is also do tomorrow and the project takes priority
-After the cohort is over I will revisit this and work on getting the code built up as much as I can to reflect what I have learned in the cohort so far.
+# Assingment Tasks Achieved By:
+These tasks were achieved by looking at module 14 and revewing the lesson material. It helped as a guide when I had to create posts and had to update an existing post. Time management helps a lot with this assignment as well.
 
 # Future Screenshot:
+<img src="./images/2021-10-05" alt="Screenshot" />
 
 # Future Link to Video Walkthrough:
+<a href="https://watch.screencastify.com/v/aGThmDbWwQakZN2YgQdY">Link to Application</a>
 
 # Contributors:
 Made with love by Josh Jackson
