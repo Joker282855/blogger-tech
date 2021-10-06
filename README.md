@@ -19,7 +19,7 @@ This challenge asked us to make a tech blog where people can post blogs along wi
 These tasks were achieved by looking at module 14 and revewing the lesson material. It helped as a guide when I had to create posts and had to update an existing post. Time management helps a lot with this assignment as well.
 
 # Future Screenshot:
-<img src="./images/2021-10-05" alt="Screenshot" />
+<img src="./images/2021-10-05.png" alt="Screenshot" />
 
 # Future Link to Application
 <a href="https://immense-lake-76806.herokuapp.com/">Link to Application</a>
