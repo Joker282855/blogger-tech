@@ -44,6 +44,7 @@ router.get('/homepage', (req, res) => {
             'id',
             'post_url',
             'title',
+            'text',
             'created_at'
         ],
         include: [
@@ -78,6 +79,7 @@ router.get('/dashboard', (req, res) => {
             'id',
             'post_url',
             'title',
+            'text',
             'created_at'
         ],
         include: [
@@ -112,6 +114,7 @@ router.get('/login', (req, res) => {
             'id',
             'post_url',
             'title',
+            'text',
             'created_at'
         ],
         include: [
@@ -155,6 +158,7 @@ router.get('/signedin', (req, res) => {
             'id',
             'post_url',
             'title',
+            'text',
             'created_at'
         ],
         include: [
@@ -232,6 +236,7 @@ router.get('/posted', (req, res) => {
             'id',
             'post_url',
             'title',
+            'text',
             'created_at'
         ],
         include: [
