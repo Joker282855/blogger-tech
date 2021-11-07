@@ -15,7 +15,7 @@ const postData = [
     },
     {
         title: 'Healthy Gaming',
-        text: 'This is a website for gamers with tips to helpl them stay healthy even though they like to occasionally game from time to time.',
+        text: 'This is a website for gamers with tips to help them stay healthy even though they like to occasionally game from time to time.',
         post_url: 'https://hundredlifedesign.com',
         user_id: 3
     },
