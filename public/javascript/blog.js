@@ -6,7 +6,7 @@ async function postCreateHandler(event) {
     const post_url = document.querySelector('#post_url-blog').value.trim();
     const user_id = document.querySelector('#username').value.trim();
 
-    if (title && text && post_url) {
+    if (title && text && post_url && user_id) {
         const response = await fetch('/api/post', {
             method: 'post',
             body: JSON.stringify({
