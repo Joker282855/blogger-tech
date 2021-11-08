@@ -93,7 +93,8 @@ router.put('/:id', (req, res) => {
 });
 
 router.delete('/:id', (req, res) => {
-    Post.destroy({
+    Post.destroy(
+        {
         where: {
             id: req.params.id
         }

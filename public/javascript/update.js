@@ -24,26 +24,3 @@ async function updateFormHandler(event) {
 }
 
 document.querySelector('.update-form').addEventListener('submit', updateFormHandler);
-
-async function deleteFormHandler(event) {
-    event.preventDefault();
-
-    const title = document.querySelector('#delete-update').value.trim();
-
-    if (title) {
-        const response = await fetch('api/post/1', {
-            method: 'destroy',
-            body: JSON.stringify({
-                title
-            }),
-            headers: { 'Content-Type': 'application/json' }
-        });
-        if (response.ok) {
-            document.location.replace('/posted');
-        } else {
-            alert(response.statusText);
-        }
-    }
-}
-
-document.querySelector('.delete-form').addEventListener('submit', deleteFormHandler);
