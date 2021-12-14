@@ -2,7 +2,7 @@
 Blogger Tech
 
 # Description:
-This challenge asked us to make a tech blog where people can post blogs along with allowing clients to add comments. This challenge helped us combine all the skills we had learned on the backend side. 
+For challenge fourteen I was asked to make a tech blog where developers of all skills levels can post about 
 
 # Assignment Tasks:
 1. When the user visits the site they are presented with a website that shows them exisitng blog posts, a navigation bar on the dashboard and a login page
