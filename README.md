@@ -1,8 +1,11 @@
 # Title:
 Blogger Tech
 
-# Description:
-For challenge fourteen I was asked to make a tech blog where developers of all skills levels can post about 
+# Application Description:
+This application solves the problem of a developer not being able to reach out to other developers in other states or interacting with other developers they have not met in person. The application solves this problem by being a blog where developers of all skill levels can post articles on new coding concepts and procedures that are constantly added to the world of web developement. Developers are able to communicate with each other on this application through the ability to leave comments on articles that have already been posted and say wherther or not the article they read was useful or not.
+
+# Application Organization:
+This challenge had us do everything from scratch so I coded the frontend and backend from the ground up. I organized the background as restful api enviroment with a db folder for the database, connection folder to connect the server to the database, models folder for all of the tables, controllers folder for the routes, seeds folder for the actual data, and a public folder for all of the HTML, CSS, and Javascript code. The User model was used 
 
 # Assignment Tasks:
 1. When the user visits the site they are presented with a website that shows them exisitng blog posts, a navigation bar on the dashboard and a login page
