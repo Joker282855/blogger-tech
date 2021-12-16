@@ -1,6 +1,15 @@
 # Title:
 Blogger Tech
 
+# Table of Contents:
+- [Application Description](#application-description)
+- [Application Organization](#application-organization)
+- [Running The Application](#running-the-application)
+- [Challenge Tasks](#challenge-tasks)
+- [Challenge Tasks Achieved By](#challenge-tasks-achieved-by)
+- [Screenshot](#screenshot)
+- [Contributors](#contributors)
+
 # Application Description:
 This application solves the problem of a developer not being able to reach out to other developers in other states or interacting with other developers they have not met in person. The application solves this problem by being a blog where developers of all skill levels can post articles on new coding concepts and procedures that are constantly added to the world of web developement. Developers are able to communicate with each other on this application through the ability to leave comments on articles that have already been posted and say wherther or not the article they read was useful or not.
 
