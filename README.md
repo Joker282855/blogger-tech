@@ -20,9 +20,9 @@ After visual studio code is done downloading the link to the source code needs t
 - <a href="https://github.com/Joker282855/blogger-tech">Github Repository</a>
 Click on the green code button in the top right corner to get the link and choose the https option. Open a terminal in visual studio code after copying the link for the source code and type the command git clone. Double click after typing git clone to put in the link for the source code and hit enter to download the code. 
 
+To get the code working with visual studio code with need to install some packages from the Node.js library. The packages are installed by typing the command npm i inside the visual studio code terminal. After the packages are done installing typing the command npm start will connect the server to our application and running up on the web. The link for the application after npm start is entered is http://localhost:3001.
 
-
-# Assignment Tasks:
+# Challenge Tasks:
 1. When the user visits the site they are presented with a website that shows them exisitng blog posts, a navigation bar on the dashboard and a login page
 2. The homepage link takes the user to the homepage when clicked on
 3. Clicking on any links means that the user is either taken to the sign up page or the sign out page
@@ -33,7 +33,7 @@ Click on the green code button in the top right corner to get the link and choos
 8. Basically the other tasks were to have a user be able to create a new blog post and use routes to update or get rid of a post
 9. The last few tasks were having the user sign in again if they were ever idle
 
-# Assingment Tasks Achieved By:
+# Challenge Tasks Achieved By:
 These tasks were achieved by looking at module 14 and revewing the lesson material. It helped as a guide when I had to create posts and had to update an existing post. Time management helps a lot with this assignment as well.
 
 # Screenshot:
