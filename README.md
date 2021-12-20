@@ -19,11 +19,10 @@ This challenge had us do everything from scratch so I coded the frontend and bac
 The front end was organized through the use of handebars to create the different pages that make up the blog. The home-routes folder is what puts all of the information from the databse onto the blog when it loads. The user is presented with links in the top left corner with the articles posted underneath the links when he or she loads the application. The links are for the homepage, dashboard, and login. Cliking on any of these links gives the user a prompt that says would you like to sign in and sends the user to the login page when clicked on. The login page prompts the user to enter their username, email, and password. After a person has signed in they are rerouted to another page that has links for the homepage dashboard and logout at the top with the articles that have been posted to the blog. A link that gives the user the option to create their own post appears at the bottom of the page when the dashboard link is clicked. A link underneath the url adress for the article takes the user to the comment page. The comment page has a texbox where the user can leave their comment which appears below the textbox once they click the add comment button.
 
 # Running The Application
-The first step in running this application is to make sure the computer has the necessary software to run the application. The software the computer needs is Visual Studio Code, Insomnia, Gitbash, and Node.js. The links to download these applications is provided below.
+The first step in running this application is to make sure the computer has the necessary software to run the application. The software the computer needs is Visual Studio Code, an internet browser like Google Chrome, and Node.js. The links to download these applications is provided below.
 - <a href="https://code.visualstudio.com/docs/setup/setup-overview">Visual Studio Code Download</a>
-- <a href="https://git-scm.com/downloads">Gitbash Download</a>
 - <a href="https://nodejs.org/en/">Node.js Download</a>
-- <a href="https://insomnia.rest/">Insomnia Download</a>
+- <a href="https://www.google.com/chrome/">Google Chrome Download</a>
 
 After visual studio code is done downloading the link to the source code needs to be downloaded from my github respository. The link to my github repository is provided down below.
 - <a href="https://github.com/Joker282855/blogger-tech">Github Repository</a>
